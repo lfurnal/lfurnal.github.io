@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Markdown Viewer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js/styles/github-dark.min.css">
+</head>
+
+<body>
+
+<textarea id="mdInput"># Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+This is a paragraph.\
+Line break!\
+Numbered List:
+1. Crack
+2. Wash
+3. Cook
+
+Bullet List:
+* C
+* C++
+* C#
+* D
+* Python
+* JavaScript
+* TypeScript
+* HTML
+* CSS
+* Swift
+* Kotlin
+* Java
+* PHP
+* Lua
+* Go
+* R
+* Ruby
+* Perl
+* F#
+* Dart
+* LaTeX
+* Makefile
+* Markdown
+* PowerShell
+* Assembly
+* Batch
+
+**Bold**, *Italics*, ***Both***, ~~Strikethrough~~, <u>Underline</u>.
+``` lua
+function text_prompt(message, prompt)
+    io.write(msg)
+    io.flush()
+    return io.read()
+end
+
+local _ = 2 ^ tonumber(text_prompt(''), 10)
+```
+</textarea>
+
+<div id="output"></div>
+
+<!-- Load scripts LAST -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/highlight.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
